@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provadent - The Revolutionary Dental Supplement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .hero-section {
+            background-color: #e0f7fa;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .hero-section h2 {
+            color: #00796b;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .hero-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+        .features, .testimonials, .pricing {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        .features h2, .testimonials h2, .pricing h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature-item img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+        .feature-item div {
+            flex: 1;
+        }
+        .feature-item h3 {
+            color: #00796b;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .testimonial-item {
+            background-color: #f9f9f9;
+            border-left: 5px solid #00796b;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .testimonial-item p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial-item .author {
+            font-weight: 600;
+            text-align: right;
+            display: block;
+        }
+        .pricing-plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .plan {
+            background-color: #f0f4f7;
+            border: 1px solid #cfd8dc;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            width: 30%;
+            min-width: 280px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .plan:hover {
+            transform: translateY(-5px);
+        }
+        .plan h3 {
+            color: #00796b;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .plan .price {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+        .plan .price span {
+            font-size: 0.5em;
+            vertical-align: super;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .plan ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .plan ul li::before {
+            content: '✔';
+            color: #00796b;
+            position: absolute;
+            left: 0;
+        }
+        .plan .cta-button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .guarantee {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #fffde7;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #ffeb3b;
+        }
+        .guarantee h2 {
+            color: #fbc02d;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .guarantee p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .hero-section h2 {
+                font-size: 1.8em;
+            }
+            .pricing-plans {
+                flex-direction: column;
+                align-items: center;
+            }
+            .plan {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Provadent: Your Secret to a Healthy Smile</h1>
+            <p>The revolutionary dental supplement for optimal oral health and fresh breath.</p>
+        </header>
+
+        <section class="hero-section">
+            <h2>Unlock the Power of a Naturally Healthy Mouth!</h2>
+            <p>Discover Provadent, the advanced formula designed to support your oral microbiome, protect against decay, and eliminate bad breath. Experience the confidence of a truly healthy smile!</p>
+            <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Get Your Provadent Today!</a>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Provadent?</h2>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/60/00796b/ffffff?text=🦷" alt="Tooth Icon">
+                <div>
+                    <h3>Supports Oral Microbiome</h3>
+                    <p>A balanced oral microbiome is key to fighting off harmful bacteria and maintaining gum health.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/60/00796b/ffffff?text=🛡️" alt="Shield Icon">
+                <div>
+                    <h3>Protects Against Decay</h3>
+                    <p>Strengthens tooth enamel and helps prevent cavities, keeping your teeth strong and healthy.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/60/00796b/ffffff?text=🌬️" alt="Breath Icon">
+                <div>
+                    <h3>Eliminates Bad Breath</h3>
+                    <p>Targets the root cause of bad breath, leaving you with a fresh and clean feeling all day long.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/60/00796b/ffffff?text=🌿" alt="Natural Icon">
+                <div>
+                    <h3>All-Natural Ingredients</h3>
+                    <p>Formulated with powerful, natural ingredients backed by science for safe and effective results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-item">
+                <p>"I've struggled with gum issues for years, and Provadent has made a noticeable difference. My mouth feels cleaner, and my gums are healthier!"</p>
+                <span class="author">- Sarah L., New York</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Finally, a natural solution for bad breath that actually works! I feel so much more confident now."</p>
+                <span class="author">- Mark T., California</span>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Choose Your Provadent Package</h2>
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h3>1 Bottle</h3>
+                    <p class="price">$69<span>/bottle</span></p>
+                    <ul>
+                        <li>✔ 30-Day Supply</li>
+                        <li>✔ Supports Oral Health</li>
+                        <li>✔ Fresh Breath</li>
+                    </ul>
+                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Order Now</a>
+                </div>
+                <div class="plan">
+                    <h3>3 Bottles</h3>
+                    <p class="price">$59<span>/bottle</span></p>
+                    <p>Save $30!</p>
+                    <ul>
+                        <li>✔ 90-Day Supply</li>
+                        <li>✔ Supports Oral Health</li>
+                        <li>✔ Fresh Breath</li>
+                        <li>✔ Free Shipping (US)</li>
+                    </ul>
+                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Order Now</a>
+                </div>
+                <div class="plan">
+                    <h3>6 Bottles</h3>
+                    <p class="price">$49<span>/bottle</span></p>
+                    <p>Save $120!</p>
+                    <ul>
+                        <li>✔ 180-Day Supply</li>
+                        <li>✔ Supports Oral Health</li>
+                        <li>✔ Fresh Breath</li>
+                        <li>✔ Free Shipping (US)</li>
+                        <li>✔ Best Value!</li>
+                    </ul>
+                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="guarantee">
+            <h2>100% Satisfaction Guarantee</h2>
+            <p>We are so confident in Provadent that we offer a 60-day money-back guarantee. If you're not completely satisfied, simply return the product for a full refund, no questions asked.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Provadent. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
